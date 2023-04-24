@@ -1,0 +1,17 @@
+.card-img-top {
+  height: 400px; /* set the height of the image */
+  object-fit: cover; /* scale the image to fit the container */
+}
+
+.card {
+  height: 100%; /* set the height of the card to match */
+}
+
+.card-body {
+  display: flex; /* use flexbox for vertical centering */
+  align-items: center;
+}
+
+.card-img-top {
+  box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.75); /* add a drop shadow */
+}
