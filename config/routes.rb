@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   get '/movie_finder', to: 'pages#movie_finder'
   get '/old_film_work', to: 'pages#old_film_work'
   get '/contact', to: 'pages#contact'
+  get '/chat', to: 'pages#chat'
 end

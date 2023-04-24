@@ -1,18 +1,22 @@
-const API_KEY = "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"
+const API_KEY = ""
 
 async function fetchData() {
-  const response = await fetch("https://api.openai.com/v1/completions", {
+  const response = await fetch("https://api.openai.com/v1/chat/completions", {
     method: "POST",
     headers: {
       Authorization: `Bearer ${API_KEY}`,
       "Content-Type": "application/json"
     },
     body: JSON.stringify({
-      model: "text-davinci-003",
-      prompt: "Hello, how are you today?",
-      max_token: 7
+      model: "gpt-4",
+      messages: [{
+        role: "user",
+        content: "Hello!"
+      }]
     })
   })
   const data = await response.json()
   console.log(data)
 }
+
+fetchData()
